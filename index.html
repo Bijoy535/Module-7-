@@ -10,15 +10,42 @@
 <body>
 
     <script>
-        //introduce with operator : 
-        var a=20
-        var b= 30
+        //if else condition statement work :
+        var age = 99;
+        var city = "Dhaka";
+        if (age > 18 && city == 'Dhaka') {
+            document.write('You are a Adult person')
+        }
+        else {
+            document.write('You are Child');
+        } 
 
-        var c=(a-b) 
-        document.write(c)
+        // if else if condition statement :
+        var Marks=85;
+        
+        if(Marks>=80 && Marks<=100){
+            document.write('A+')
+        } 
+        else if(Marks<80 && Marks>=70){
+            document.write('A')
+        }
+        else if (Marks<70 && Marks>=60){
+            document.write('A-')
+        }
+        else if (Marks<60 && Marks>=50){
+            document.write('B')
+        }
+        else if (Marks<50 && Marks>=40){
+            document.write('C')
+        }
+        else if (Marks<40 && Marks>=33){
+            document.write('D')
 
-
-
+        }
+        else{
+            document.write('F')
+        }
+            
 
     </script>
 </body>
