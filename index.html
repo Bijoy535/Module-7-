@@ -10,17 +10,43 @@
 <body>
 
     <script>
-    // object in js file 
+   //array all statement : 
+/*
+   var category=["allium","food and vegetable","Rice " ,"leaf" ,"green chile "];
+   //                0          1                 2       3           4
+   // ai counting k index bola hoy
 
-    var MyPc={
-        brand:"HP",
-        screen:"15.6",
-        isLaptop:true,
-        ram:"8gb",
-        isSSD:"500 gb",
-        pocessor:"core i-5" 
-    }
-    document.write(MyPc.ram); 
+   var i;
+   for(i=0;i<category.length; i=i+1 ){
+
+  
+     document.write(category[i=4]+"<br>")
+
+   }
+*/
+
+/*
+// for in loop in array 
+var category=["allium","food and vegetable","Rice " ,"leaf" ,"green chile "];
+
+for(var item in category ){
+    document.write(category[item]+"<br>");
+}    
+*/
+
+// object in array in for in loops : 
+var person ={
+    name : "Bijoy ",
+    age : 39,
+    city : "london ",
+    height : "5 feet"
+}
+
+for (var item in person)
+document.write(person[item] + "<br>")
+
+
+ 
 
 
     </script>
