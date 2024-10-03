@@ -2,54 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
 
-    <script>
-   //array all statement : 
-/*
-   var category=["allium","food and vegetable","Rice " ,"leaf" ,"green chile "];
-   //                0          1                 2       3           4
-   // ai counting k index bola hoy
-
-   var i;
-   for(i=0;i<category.length; i=i+1 ){
-
-  
-     document.write(category[i=4]+"<br>")
-
-   }
-*/
-
-/*
-// for in loop in array 
-var category=["allium","food and vegetable","Rice " ,"leaf" ,"green chile "];
-
-for(var item in category ){
-    document.write(category[item]+"<br>");
-}    
-*/
-
-// object in array in for in loops : 
-var person ={
-    name : "Bijoy ",
-    age : 39,
-    city : "london ",
-    height : "5 feet"
-}
-
-for (var item in person)
-document.write(person[item] + "<br>")
-
-
+  <script>
+    /*
+    //array concat in
  
+var arr1=['A','B','C'];
+var arr2=['D','E','F'];
+var arr3= arr2.concat(arr1);
+document.write(arr3);
+--------------------------
+*/
+
+    /*
+      // array .from 
+      
+      var Title ="Code in is Cse ";
+    
+      var TitleArray = Array.from(Title);
+    
+      document.write(TitleArray[7]);
+      ------------------------------------
+      */
+
+    /*
+    //array filter : 
+    var numbers=[30,40,50,60,80,70,90];
+    var result=numbers.filter( function(item){
+      return item <50
+  
+    })
+  
+    document.write(result)
+  -----------------------------------------------
+  */
+
+    /*
+    //array find : //find index :
+    var numArray=[32,35,40,50,60,70,80,90];
+    
+    var result = numArray.findIndex(function(value){
+        return value < 80
+    })
+    document.write(result);
+    ---------------------------------
+    */
 
 
-    </script>
+    /*
+    // for each  
+    var numArray=[32,35,40,10,60,70,80,90];
+    
+    numArray.forEach(function(item)
+    {
+        document.write(item+"<br>")
+    
+    })
+        ---------------------------------------------
+    
+    */
+    //for includes :
+    /*
+    var numArray=[32,35,40,50,60,70,80,90];
+    var result=numArray.includes(70);
+    document.write(result);
+    --------------------------------------
+    */
+
+    /*
+            // for includes index : 
+            var numArray = [32, 35, 40, 50, 60, 70, 80, 90];
+            var result = numArray.indexOf(60);
+            document.write(result)
+            -----------------------------------
+    
+    */
+
+    /*
+    
+    // array reverse : 
+    var numArray = [32, 35, 40, 50, 60, 70, 80, 90];
+    numArray.reverse()
+    document.write(numArray+"<br>")
+    
+    
+    ///array push and pop :
+    var numArray = [32, 35, 40, 50, 60, 70, 80, 90]; 
+    numArray.push(110)
+    document.write(numArray+"<br>")
+    
+    var numArray = [32, 35, 40, 50, 60, 70, 80, 90]; 
+    numArray.pop()
+    numArray.pop()
+    numArray.pop()
+    numArray.pop()
+    
+    document.write(numArray )
+    */ /*
+    //array slice : 
+    var numArray=[30,40,15,60,70,10]
+    numArray.sort().reverse()
+    document.write(numArray+"<br>")
+    -------------------------------
+    */
+
+    /*
+    //slice 
+    var numArray = [30, 40, 15, 60, 70, 10];
+           //        0   1   2   3   4   5
+    var result = numArray.slice(1, 5);
+    document.write(result);
+    ------------------------------
+    */
+
+    /*
+    //array splice : 
+    var numArray = [30, 40, 15, 60, 70, 10];
+    // var result=numArray.splice(index,removerCount,item);
+    // numArray.splice(1,2)
+    numArray.splice(5,0,55);
+    document.write(numArray)
+    ------------------------------
+*/
+
+    // String Method : 
+
+    var country1= "Bangladesh";
+    var country2 = "India";
+
+    document.write(
+      //country1.charAt(5)
+      //country2.concat(country1)
+      //country1.indexOf("l")
+          
+    )
+
+  </script>
 </body>
 
 </html>
